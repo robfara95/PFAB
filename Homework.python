@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import math
 
 first = "Robert"
@@ -21,3 +23,6 @@ print operand1, "-", operand2, "=", (operand1 - operand2)
 print operand1, "*", operand2, "=", (operand1 * operand2)
 print operand1, "/", operand2, "=", (operand1 / operand2)
 print operand1, "%", operand2, "=", (operand1 % operand2)
+
+#My Solution 16) is good because all of the print statements with arthimetic operatoins use the same variables
+#As a result, only the initialize statements for operand1 and operand2 have to be changed to execute new values.
