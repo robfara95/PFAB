@@ -1,0 +1,23 @@
+import math
+
+first = "Robert"
+last = "Simon"
+age = 54
+
+print first, last, age
+
+sideA = 12.55
+sideB = 17.85
+
+sideC = math.sqrt((sideA * sideA) + (sideB * sideB))
+
+print "The length of side is ", sideC
+
+operand1 = 95
+operand2 = 64.5
+
+print operand1, "+", operand2, "=", (operand1 + operand2) 
+print operand1, "-", operand2, "=", (operand1 - operand2)
+print operand1, "*", operand2, "=", (operand1 * operand2)
+print operand1, "/", operand2, "=", (operand1 / operand2)
+print operand1, "%", operand2, "=", (operand1 % operand2)
