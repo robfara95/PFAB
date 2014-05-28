@@ -1,0 +1,20 @@
+import sys
+
+print sys.argv
+
+averageGrade = (int(sys.argv[1]) + int(sys.argv[2]) + int(sys.argv[3]) + int(sys.argv[4])) / 4
+
+print "the average score is: ", averageGrade
+
+if averageGrade >= 90:
+	grade = "A" 
+elif averageGrade >= 80:
+	grade = "B"
+elif averageGrade >= 70:
+	grade = "C"
+elif averageGrade >= 60:
+	grade = "D"
+else:
+	grade = "F"
+
+print "Letter Grade: ", grade

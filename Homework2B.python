@@ -1,0 +1,6 @@
+priceOfItem = input ("What is the cost of item? ")
+salesTaxRate = input("What is the sales tax rate (Expressed as 0.xx) ")
+
+itemCost = priceOfItem + (priceOfItem * salesTaxRate)
+
+print "The full price of the item is $ ", itemCost
