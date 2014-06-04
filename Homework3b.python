@@ -1,0 +1,22 @@
+#Programming for Absolute Beginners
+#Homework3B - Dictionary
+import operator
+
+studentGPA = {"Lassoff": 3.12, "Johnson": 2.22, "Reich": 3.59, "Honeychurch": 2.98, "Maini": 3.11, "Levin": 2.88, "Marcus": 2.77, "Banks": 3.71}
+
+gpaTotal = 0
+nbrOfGrades = 0
+print "\nList of Student names and GPA in name order\n"
+for currStdnt in sorted(studentGPA):
+	print "last Name: ", currStdnt, "  GPA: ",studentGPA[currStdnt]
+	gpaTotal = gpaTotal + studentGPA[currStdnt]
+	nbrOfGrades += 1
+
+print "\nThe average GPA for ", nbrOfGrades, " students in class is: ", gpaTotal / nbrOfGrades
+
+
+print("")
+currRank = 1;
+for student, gpa in sorted(studentGPA.iteritems(), key=operator.itemgetter(1), reverse=True):
+	print "Rank #", currRank, "   ", student
+	currRank = currRank + 1

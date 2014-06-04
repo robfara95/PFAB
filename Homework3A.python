@@ -1,0 +1,26 @@
+Bradys= ["Mike","Carol","Marsha","Jan","Cindy","Greg","Peter","Bobby","Alice"]
+
+print "\nLength of Bradys list is ", len(Bradys), "\n"
+numBradys = len(Bradys)
+
+idx = 0
+
+print "\nPrint Bradys Dictionary using while loop"
+while (idx < numBradys) :
+	print Bradys[idx]
+	idx = idx + 1
+
+#sort
+Bradys.sort();
+
+print "\nBradys list in alphabetic order\n"
+idx = 0
+while(idx < numBradys) :
+	print Bradys[idx]
+	idx = idx + 1
+
+#For...In Loop
+print "\nBradys list using For...In Loop\n" 
+
+for currBrady in Bradys:
+	print currBrady
